@@ -1,0 +1,4217 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdftitle={Applet Codebook: HBN Pediatric Screener for Mindlogger 8},
+            pdfauthor={Mike X.},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{booktabs}
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{Applet Codebook: HBN Pediatric Screener for Mindlogger 8}
+\author{Mike X.}
+\date{2020-03-27}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{part-protocol-intro}{%
+\part{Protocol Intro}\label{part-protocol-intro}}
+
+\hypertarget{intro}{%
+\chapter*{Intro To Protocol (IN PROGRESS)}\label{intro}}
+\addcontentsline{toc}{chapter}{Intro To Protocol (IN PROGRESS)}
+
+\hypertarget{hbn-pediatric-screener}{%
+\section{HBN Pediatric Screener}\label{hbn-pediatric-screener}}
+
+This MindLogger applet that will be implemented in clinics associated to CMI to determine areas of concern for Depression, Bullying, ADHD, Eating disorders, as well as substance abuse.
+
+\hypertarget{part-protocol-codebook}{%
+\part{Protocol Codebook}\label{part-protocol-codebook}}
+
+\hypertarget{parent-screener}{%
+\chapter{Parent Screener}\label{parent-screener}}
+
+\hypertarget{parent_consent}{%
+\section{parent\_consent}\label{parent_consent}}
+
+\textbf{Question}:
+
+"Welcome! You are being asked by your child's physician to fill out this brief questionnaire about your child's behavior. The questionnaire may take up to 10 minutes of your time to complete. There will be no cost and no payment to you for filling it out.
+
+Your child's physician may use this information to improve your child's physical and mental health evaluation. Additionally, this information may be used for general research on children's mental health. The principal investigator for this general research portion plans to have 1500 parents or legal guardian's participate.
+
+Remember, this questionnaire is not a substitute for a diagnostic evaluation by a medical or mental health professional.
+
+Your participation is voluntary; you do not have to take part. Once you have started the questionnaire you can stop at any time.
+
+If you believe your child has a psychiatric or learning disorder, please consult your child's physician.
+
+Note: Your responses are anonymous, and although no personally identifiable information is collected through this questionnaire there is the possible risk of breach of confidentiality.
+
+Please email the Principal investigator with any questions or concerns about the research at: \href{mailto:michael.milham@childmind.org}{\nolinkurl{michael.milham@childmind.org}}
+
+If you have any questions or complaints about your rights as a research subject, contact:
+
+\begin{itemize}
+\item
+  By Mail: Study Subject Adviser, Chesapeake IRB, 6940 Columbia Gateway Drive, Suite 110, Columbia, MD 21046
+\item
+  or call \textbf{toll free}: 877-992-4724
+\item
+  or by \textbf{email}: \href{mailto:adviser@chesapeakeirb.com}{\nolinkurl{adviser@chesapeakeirb.com}}
+\end{itemize}
+
+Please reference the following number when contacting the Study Subject Adviser: Pro00018821.
+
+\textbf{By clicking YES, you agree to the Terms and Conditions}"
+
+\textbf{Visibility}: \emph{Always}
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+YES
+
+0
+
+NO
+
+\hypertarget{parent_consent2}{%
+\section{parent\_consent2}\label{parent_consent2}}
+
+\textbf{Question}:
+
+"I understand that the information provided by this questionnaire is not intended to replace the advice, diagnosis, or treatment offered by a medical or mental health professional, and that my anonymous responses may be used and shared for general research on children's mental health.
+
+CHILD MIND INSTITUTE, INC. AND CHILD MIND MEDICAL PRACTICE, PLLC (TOGETHER, ``CMI'') DOES NOT DIRECTLY OR INDIRECTLY PRACTICE MEDICINE OR DISPENSE MEDICAL ADVICE AS PART OF THIS QUESTIONNAIRE. CMI ASSUMES NO LIABILITY FOR ANY DIAGNOSIS, TREATMENT, DECISION MADE, OR ACTION TAKEN IN RELIANCE UPON INFORMATION PROVIDED BY THIS QUESTIONNAIRE, AND ASSUMES NO RESPONSIBILITY FOR YOUR USE OF THIS QUESTIONNAIRE.
+
+\textbf{Please click YES to continue}."
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+YES
+
+0
+
+NO
+
+\hypertarget{parent_age}{%
+\section{parent\_Age}\label{parent_age}}
+
+\textbf{Question}: ``What is your child's age?''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}:
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+5
+
+5
+
+6
+
+6
+
+7
+
+7
+
+8
+
+8
+
+9
+
+9
+
+10
+
+10
+
+11
+
+11
+
+12
+
+12
+
+13
+
+13
+
+14
+
+14
+
+15
+
+15
+
+16
+
+16
+
+17
+
+17
+
+18
+
+18
+
+19
+
+19
+
+20
+
+20
+
+21
+
+21
+
+22
+
+Over 21
+
+\hypertarget{parent_sex}{%
+\section{parent\_Sex}\label{parent_sex}}
+
+\textbf{Question}: ``What is your child's sex?''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Female
+
+0
+
+Male
+
+\hypertarget{parent_race}{%
+\section{parent\_Race}\label{parent_race}}
+
+\textbf{Question}: ``What is your child's race?''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+White
+
+2
+
+Black or African America
+
+3
+
+Hispanic or Latino
+
+4
+
+South Asian or Indian American
+
+5
+
+Middle Eastern or Arab American
+
+6
+
+East Asian or Asian American
+
+7
+
+Native American or American Indian
+
+8
+
+Other
+
+9
+
+Two or More Races
+
+10
+
+Don't know
+
+11
+
+Choose not to specify
+
+\hypertarget{parent_ethnicity}{%
+\section{parent\_Ethnicity}\label{parent_ethnicity}}
+
+\textbf{Question}: ``What is your child's ethnicity?''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Not Hispanic/Latino
+
+2
+
+Hispanic/Latino
+
+3
+
+Don't know
+
+4
+
+Choose not to specify
+
+\hypertarget{parent_instructions1}{%
+\section{parent\_instructions1}\label{parent_instructions1}}
+
+\textbf{Question}: ``For each item, please select Never, Sometimes, or Often. It would help us if you answered all items as best as you can even if you are not absolutely certain. Please give your answers on the basis of your behavior over the past 6 months.''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: User Message/instructions
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}: \emph{This item is a markdown message}
+
+\hypertarget{parent_q1score}{%
+\section{parent\_Q1score}\label{parent_q1score}}
+
+\textbf{Question}: ``Feels sad, unhappy''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q1score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{parent_q2score}{%
+\section{parent\_Q2score}\label{parent_q2score}}
+
+\textbf{Question}: ``Feels hopeless''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q2score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{parent_q3score}{%
+\section{parent\_Q3score}\label{parent_q3score}}
+
+\textbf{Question}: ``Is down on him or herself''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q3score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{parent_q4score}{%
+\section{parent\_Q4score}\label{parent_q4score}}
+
+\textbf{Question}: ``Worries a lot''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q4score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{parent_q5score}{%
+\section{parent\_Q5score}\label{parent_q5score}}
+
+\textbf{Question}: ``Seems to be having less fun''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q5score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{parent_q6score}{%
+\section{parent\_Q6score}\label{parent_q6score}}
+
+\textbf{Question}: ``Fidgety, unable to sit still''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q6score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{parent_q7score}{%
+\section{parent\_Q7score}\label{parent_q7score}}
+
+\textbf{Question}: ``Daydreams too much''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q7score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{parent_q8score}{%
+\section{parent\_Q8score}\label{parent_q8score}}
+
+\textbf{Question}: ``Distracted easily''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q8score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{parent_q9score}{%
+\section{parent\_Q9score}\label{parent_q9score}}
+
+\textbf{Question}: ``Has trouble concentrating''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q9score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{parent_q10score}{%
+\section{parent\_Q10score}\label{parent_q10score}}
+
+\textbf{Question}: ``Acts as if driven by a motor''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q10score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{parent_q11score}{%
+\section{parent\_Q11score}\label{parent_q11score}}
+
+\textbf{Question}: ``Fights with other children''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q11score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{parent_q12score}{%
+\section{parent\_Q12score}\label{parent_q12score}}
+
+\textbf{Question}: ``Does not listen to rules''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q12score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{parent_q13score}{%
+\section{parent\_Q13score}\label{parent_q13score}}
+
+\textbf{Question}: ``Does not understand other people's feelings''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q13score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{parent_q14score}{%
+\section{parent\_Q14score}\label{parent_q14score}}
+
+\textbf{Question}: ``Teases others''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q14score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{parent_q15score}{%
+\section{parent\_Q15score}\label{parent_q15score}}
+
+\textbf{Question}: ``Blames others for his or her troubles''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q15score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{parent_q16score}{%
+\section{parent\_Q16score}\label{parent_q16score}}
+
+\textbf{Question}: ``Refuses to share''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q16score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{parent_q17score}{%
+\section{parent\_Q17score}\label{parent_q17score}}
+
+\textbf{Question}: ``Takes things that do not belong to him or her''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q17score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{parent_q18score}{%
+\section{parent\_Q18score}\label{parent_q18score}}
+
+\textbf{Question}: ``Picked on or bullied by other children''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q18score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not True
+
+1
+
+Somewhat True
+
+2
+
+Certainly True
+
+\hypertarget{parent_q19score}{%
+\section{parent\_Q19score}\label{parent_q19score}}
+
+\textbf{Question}: ``Thoughts that you would be better of dead or of hurting yourself in some way''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q19score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not at all
+
+1
+
+Several Days
+
+2
+
+More than Half the Days
+
+3
+
+Nearly Every Day
+
+\hypertarget{parent_q20score}{%
+\section{parent\_Q20score}\label{parent_q20score}}
+
+\textbf{Question}: ``Little interest or pleasure in doing things''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q20score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not at all
+
+1
+
+Several Days
+
+2
+
+More than Half the Days
+
+3
+
+Nearly Every Day
+
+\hypertarget{parent_q21score}{%
+\section{parent\_Q21score}\label{parent_q21score}}
+
+\textbf{Question}: ``Feeling down, depressed or hopeless''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q21score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not at all
+
+1
+
+Several Days
+
+2
+
+More than Half the Days
+
+3
+
+Nearly Every Day
+
+\hypertarget{parent_instructions2}{%
+\section{parent\_instructions2}\label{parent_instructions2}}
+
+\textbf{Question}: ``The next questions are about your child's eating habits and his or her feelings about his or her shape and weight. Please give your answers on the basis of your child's behavior over the past 3 months''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: User Message/instructions
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}: \emph{This item is a markdown message}
+
+\hypertarget{parent_q22score}{%
+\section{parent\_Q22score}\label{parent_q22score}}
+
+\textbf{Question}: ``Is preoccupied with gaining weight or worrying a lot about becoming fat?''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q22score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not True
+
+1
+
+Somewhat True
+
+2
+
+Certainly True
+
+\hypertarget{parent_q23score}{%
+\section{parent\_Q23score}\label{parent_q23score}}
+
+\textbf{Question}: ``Makes himself or herself throw up to try to control their weight, or because your child was upset because he or she ate too much?''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q23score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not True
+
+1
+
+Somewhat True
+
+2
+
+Certainly True
+
+\hypertarget{parent_q24score}{%
+\section{parent\_Q24score}\label{parent_q24score}}
+
+\textbf{Question}: ``Does other things to control his or her weight, like exercise excessively, restrict food, take laxatives, or diet pills?''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q24score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not True
+
+1
+
+Somewhat True
+
+2
+
+Certainly True
+
+\hypertarget{parent_q25score}{%
+\section{parent\_Q25score}\label{parent_q25score}}
+
+\textbf{Question}: ``Has eating binges, when he or she loses control of their eating and eats way more than he or she needed to because he or she is unable to stop himself or herself from eating?''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Q25score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not True
+
+1
+
+Somewhat True
+
+2
+
+Certainly True
+
+\hypertarget{parent_insurance}{%
+\section{parent\_Insurance}\label{parent_insurance}}
+
+\textbf{Question}: ``From where do you get your health insurance?''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Insurance_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Medicare/Medicaid
+
+2
+
+Current Employer or Spouse/Partner's Employer
+
+3
+
+Self-Pay
+
+4
+
+Choose not to disclose
+
+5
+
+Other
+
+\hypertarget{parent_edu}{%
+\section{parent\_Edu}\label{parent_edu}}
+
+\textbf{Question}: ``What is the highest level of education of the child's legal guardian?''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Edu_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Less than 7th grade
+
+2
+
+Junior high/Middle school (9th grade)
+
+3
+
+Partial high school (10th or 11th grade)
+
+4
+
+High school graduate
+
+5
+
+Partial college (at least one year)
+
+6
+
+College education
+
+7
+
+Graduate degree
+
+\hypertarget{parent_income}{%
+\section{parent\_Income}\label{parent_income}}
+
+\textbf{Question}: ``What is your household income?''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Income_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Less than \$10K
+
+2
+
+\$10K to \$19K
+
+3
+
+\$20K to \$29K
+
+4
+
+\$30K to \$39K
+
+5
+
+\$40K to \$49K
+
+6
+
+\$50K to \$59K
+
+7
+
+\$60K to \$69K
+
+8
+
+\$70K to \$79K
+
+9
+
+\$90K to \$99K
+
+10
+
+\$100K to \$149K
+
+11
+
+\$150K or more
+
+12
+
+Choose not to disclose
+
+\hypertarget{parent_location}{%
+\section{parent\_Location}\label{parent_location}}
+
+\textbf{Question}: ``In what area of Staten Island do you live?''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/parent_Location_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+North Shore
+
+2
+
+Mid Island
+
+3
+
+South Shore
+
+4
+
+Do not live on Staten Isand
+
+\hypertarget{parent_height}{%
+\section{parent\_height}\label{parent_height}}
+
+\textbf{Question}: ``What is this child's height (inches)?''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}:
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}: \emph{This item is a text input}
+
+\hypertarget{parent_weight}{%
+\section{parent\_weight}\label{parent_weight}}
+
+\textbf{Question}: ``What is this child's weight (lbs)?''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}:
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}: \emph{This item is a text input}
+
+\hypertarget{parent_id}{%
+\section{parent\_ID}\label{parent_id}}
+
+\textbf{Question}: ``Participant ID (optional)''
+
+\textbf{Visibility}: \protect\hyperlink{parent_consent}{parent\_consent} = 1 and \protect\hyperlink{parent_consent2}{parent\_consent2} = 1
+
+\textbf{Item Type}:
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}: \emph{This item is a text input}
+
+\hypertarget{part-protocol-codebook-1}{%
+\part{Protocol Codebook}\label{part-protocol-codebook-1}}
+
+\hypertarget{child-screener}{%
+\chapter{Child Screener}\label{child-screener}}
+
+\hypertarget{child_parent_consent}{%
+\section{child\_parent\_consent}\label{child_parent_consent}}
+
+\textbf{Question}:
+
+"Welcome! You are being asked by your child's physician to fill out this brief questionnaire about your child's behavior. The questionnaire may take up to 10 minutes of your time to complete. There will be no cost and no payment to you for filling it out.
+
+Your child's physician may use this information to improve your child's physical and mental health evaluation. Additionally, this information may be used for general research on children's mental health. The principal investigator for this general research portion plans to have 1500 parents or legal guardian's participate.
+
+Remember, this questionnaire is not a substitute for a diagnostic evaluation by a medical or mental health professional.
+
+Your participation is voluntary; you do not have to take part. Once you have started the questionnaire you can stop at any time.
+
+If you believe your child has a psychiatric or learning disorder, please consult your child's physician.
+
+Note: Your responses are anonymous, and although no personally identifiable information is collected through this questionnaire there is the possible risk of breach of confidentiality.
+
+Please email the Principal investigator with any questions or concerns about the research at: \href{mailto:michael.milham@childmind.org}{\nolinkurl{michael.milham@childmind.org}}
+
+If you have any questions or complaints about your rights as a research subject, contact:
+
+\begin{itemize}
+\item
+  By Mail: Study Subject Adviser, Chesapeake IRB, 6940 Columbia Gateway Drive, Suite 110, Columbia, MD 21046
+\item
+  or call \textbf{toll free}: 877-992-4724
+\end{itemize}
+
++or by \textbf{email}: \href{mailto:adviser@chesapeakeirb.com}{\nolinkurl{adviser@chesapeakeirb.com}}
+
+Please reference the following number when contacting the Study Subject Adviser: Pro00018821.
+
+\textbf{By clicking YES, you agree to the Terms and Conditions}"
+
+\textbf{Visibility}: \emph{Always}
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+YES
+
+0
+
+NO
+
+\hypertarget{child_parent_consent2}{%
+\section{child\_parent\_consent2}\label{child_parent_consent2}}
+
+\textbf{Question}:
+
+"I understand that the information provided by this questionnaire is not intended to replace the advice, diagnosis, or treatment offered by a medical or mental health professional, and that my anonymous responses may be used and shared for general research on children's mental health.
+
+CHILD MIND INSTITUTE, INC. AND CHILD MIND MEDICAL PRACTICE, PLLC (TOGETHER, ``CMI'') DOES NOT DIRECTLY OR INDIRECTLY PRACTICE MEDICINE OR DISPENSE MEDICAL ADVICE AS PART OF THIS QUESTIONNAIRE. CMI ASSUMES NO LIABILITY FOR ANY DIAGNOSIS, TREATMENT, DECISION MADE, OR ACTION TAKEN IN RELIANCE UPON INFORMATION PROVIDED BY THIS QUESTIONNAIRE, AND ASSUMES NO RESPONSIBILITY FOR YOUR USE OF THIS QUESTIONNAIRE.
+
+\textbf{Please click YES to continue}."
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+YES
+
+0
+
+NO
+
+\hypertarget{child_assent}{%
+\section{child\_assent}\label{child_assent}}
+
+\textbf{Question}:
+
+"Welcome! You are being asked by your doctor to fill out this brief questionnaire about your feelings and behavior. The questionnaire may take up to 10 minutes of your time to complete. There will be no cost and no payment to you for filling it out.
+
+Your doctor may use this information to improve your physical and mental health well being. Additionally, this information may be used for general research on children's mental health.
+
+Your participation is voluntary; you do not have to take part. Once you have started the questionnaire you can stop at any time.
+
+Note: Your responses are coded, and although no personally identifiable information is collected through this questionnaire there is the possible risk of breach of confidentiality.
+
+\textbf{By clicking YES, you agree to complete this questionnaire}"
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+YES
+
+0
+
+NO
+
+\hypertarget{child_age}{%
+\section{child\_Age}\label{child_age}}
+
+\textbf{Question}: ``What is your age?''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}:
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+11
+
+11
+
+12
+
+12
+
+13
+
+13
+
+14
+
+14
+
+15
+
+15
+
+16
+
+16
+
+17
+
+17
+
+\hypertarget{child_sex}{%
+\section{child\_Sex}\label{child_sex}}
+
+\textbf{Question}: ``What is your sex?''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Female
+
+0
+
+Male
+
+\hypertarget{child_race}{%
+\section{child\_Race}\label{child_race}}
+
+\textbf{Question}: ``What is your race?''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+White
+
+2
+
+Black or African America
+
+3
+
+Hispanic or Latino
+
+4
+
+South Asian or Indian American
+
+5
+
+Middle Eastern or Arab American
+
+6
+
+East Asian or Asian American
+
+7
+
+Native American or American Indian
+
+8
+
+Other
+
+9
+
+Two or More Races
+
+10
+
+Don't know
+
+11
+
+Choose not to specify
+
+\hypertarget{child_ethnicity}{%
+\section{child\_Ethnicity}\label{child_ethnicity}}
+
+\textbf{Question}: ``What is your ethnicity?''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Not Hispanic/Latino
+
+2
+
+Hispanic/Latino
+
+3
+
+Don't know
+
+4
+
+Choose not to specify
+
+\hypertarget{child_instructions1}{%
+\section{child\_instructions1}\label{child_instructions1}}
+
+\textbf{Question}: ``Please mark under the heading that best fits you.''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: User Message/instructions
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}: \emph{This item is a markdown message}
+
+\hypertarget{child_q1score}{%
+\section{child\_Q1score}\label{child_q1score}}
+
+\textbf{Question}: ``Fidgety, unable to sit still''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q1score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{child_q2score}{%
+\section{child\_Q2score}\label{child_q2score}}
+
+\textbf{Question}: ``Feel sad, unhappy''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q2score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{child_q3score}{%
+\section{child\_Q3score}\label{child_q3score}}
+
+\textbf{Question}: ``Daydream too much''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q3score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{child_q4score}{%
+\section{child\_Q4score}\label{child_q4score}}
+
+\textbf{Question}: ``Refuse to share''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q4score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{child_q5score}{%
+\section{child\_Q5score}\label{child_q5score}}
+
+\textbf{Question}: ``Do not understand other people's feelings''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q5score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{child_q6score}{%
+\section{child\_Q6score}\label{child_q6score}}
+
+\textbf{Question}: ``Feel hopeless''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q6score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{child_q7score}{%
+\section{child\_Q7score}\label{child_q7score}}
+
+\textbf{Question}: ``Have trouble concentrating''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q7score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{child_q8score}{%
+\section{child\_Q8score}\label{child_q8score}}
+
+\textbf{Question}: ``Fight with other children''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q8score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{child_q9score}{%
+\section{child\_Q9score}\label{child_q9score}}
+
+\textbf{Question}: ``Down on yourself''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q9score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{child_q10score}{%
+\section{child\_Q10score}\label{child_q10score}}
+
+\textbf{Question}: ``Blame others for your troubles''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q10score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{child_q11score}{%
+\section{child\_Q11score}\label{child_q11score}}
+
+\textbf{Question}: ``Seem to be having less fun''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q11score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{child_q12score}{%
+\section{child\_Q12score}\label{child_q12score}}
+
+\textbf{Question}: ``Do not listen to rules''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q12score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{child_q13score}{%
+\section{child\_Q13score}\label{child_q13score}}
+
+\textbf{Question}: ``Act as if driven by a motor''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q13score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{child_q14score}{%
+\section{child\_Q14score}\label{child_q14score}}
+
+\textbf{Question}: ``Tease others''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q14score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{child_q15score}{%
+\section{child\_Q15score}\label{child_q15score}}
+
+\textbf{Question}: ``Worry a lot''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q15score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{child_q16score}{%
+\section{child\_Q16score}\label{child_q16score}}
+
+\textbf{Question}: ``Take things that do not belong to you''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q16score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{child_q17score}{%
+\section{child\_Q17score}\label{child_q17score}}
+
+\textbf{Question}: ``Distract easily''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q17score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{child_q18score}{%
+\section{child\_Q18score}\label{child_q18score}}
+
+\textbf{Question}: ``Other children or young people pick on me or bully me''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q18score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not True
+
+1
+
+Somewhat True
+
+2
+
+Certainly True
+
+\hypertarget{child_q19score}{%
+\section{child\_Q19score}\label{child_q19score}}
+
+\textbf{Question}: ``Thoughts that you would be better off dead, or of hurting yourself in some way''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q19score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not at all
+
+1
+
+Several Days
+
+2
+
+More than Half the Days
+
+3
+
+Nearly Every Day
+
+\hypertarget{child_q20score}{%
+\section{child\_Q20score}\label{child_q20score}}
+
+\textbf{Question}: ``Little interest or pleasure in doing things''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q20score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not at all
+
+1
+
+Several Days
+
+2
+
+More than Half the Days
+
+3
+
+Nearly Every Day
+
+\hypertarget{child_q21score}{%
+\section{child\_Q21score}\label{child_q21score}}
+
+\textbf{Question}: ``Feeling down, depressed, or hopeless''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q21score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not at all
+
+1
+
+Several Days
+
+2
+
+More than Half the Days
+
+3
+
+Nearly Every Day
+
+\hypertarget{child_instructions2}{%
+\section{child\_instructions2}\label{child_instructions2}}
+
+\textbf{Question}: ``The next questions are about your eating habits and feelings about your shape and weight. Please give your answers on the basis of your behavior over the past 3 months:''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: User Message/instructions
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}: \emph{This item is a markdown message}
+
+\hypertarget{child_q22score}{%
+\section{child\_Q22score}\label{child_q22score}}
+
+\textbf{Question}: ``Were you preoccupied with gaining weight or worrying a lot about becoming fat?''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q22score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not True
+
+1
+
+Somewhat True
+
+2
+
+Certainly True
+
+\hypertarget{child_q23score}{%
+\section{child\_Q23score}\label{child_q23score}}
+
+\textbf{Question}: ``Made yourself throw up to try to control their weight, or because you were upset because you ate too much?''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q23score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not True
+
+1
+
+Somewhat True
+
+2
+
+Certainly True
+
+\hypertarget{child_q24score}{%
+\section{child\_Q24score}\label{child_q24score}}
+
+\textbf{Question}: ``Done other things to control your weight, like exercise excessively, restrict food, take laxatives, or diet pills?''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q24score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not True
+
+1
+
+Somewhat True
+
+2
+
+Certainly True
+
+\hypertarget{child_q25score}{%
+\section{child\_Q25score}\label{child_q25score}}
+
+\textbf{Question}: ``Had eating binges, when you lose control of your eating and eat way more than you needed to because you were unable to stop yourself from eating?''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_Q25score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not True
+
+1
+
+Somewhat True
+
+2
+
+Certainly True
+
+\hypertarget{child_crafft_alcohol}{%
+\section{child\_CRAFFT\_Alcohol}\label{child_crafft_alcohol}}
+
+\textbf{Question}:
+
+"During the past 12 months, did you:
+
+Drink any alcohol (more than a few sips)? (Do not count sips of alcohol taken during family or religious events)"
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_CRAFFT_Alcohol_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{child_crafft_smoke}{%
+\section{child\_CRAFFT\_Smoke}\label{child_crafft_smoke}}
+
+\textbf{Question}:
+
+"During the past 12 months, did you:
+
+Smoke any marijuanaor hashish?"
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_CRAFFT_Smoke_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{child_crafft_other_drug}{%
+\section{child\_CRAFFT\_Other\_Drug}\label{child_crafft_other_drug}}
+
+\textbf{Question}:
+
+"During the past 12 months, did you:
+
+Use anything else to get high? (``anything else'' includes illegal drugs, over the counter and perscription drugs, and things that you sniff or ``huff'')"
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_CRAFFT_Other_Drug_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{child_crafft_car}{%
+\section{child\_CRAFFT\_Car}\label{child_crafft_car}}
+
+\textbf{Question}: ``Have you ever ridden in a CAR driven by someone (including yourself) who was''high" or had been using alcohol or drugs?"
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1 and (\protect\hyperlink{child_crafft_alcohol}{child\_CRAFFT\_Alcohol} = 1 or \protect\hyperlink{child_crafft_smoke}{child\_CRAFFT\_Smoke} = 1 or \protect\hyperlink{child_crafft_other_drug}{child\_CRAFFT\_Other\_Drug} = 1)
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_CRAFFT_Car_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{child_crafft_relax}{%
+\section{child\_CRAFFT\_Relax}\label{child_crafft_relax}}
+
+\textbf{Question}: ``Do you ever use alcohol or drugs to relax, feel better about yourself, or fit in?''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1 and (\protect\hyperlink{child_crafft_alcohol}{child\_CRAFFT\_Alcohol} = 1 or \protect\hyperlink{child_crafft_smoke}{child\_CRAFFT\_Smoke} = 1 or \protect\hyperlink{child_crafft_other_drug}{child\_CRAFFT\_Other\_Drug} = 1)
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_CRAFFT_Relax_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{child_crafft_alone}{%
+\section{child\_CRAFFT\_Alone}\label{child_crafft_alone}}
+
+\textbf{Question}: ``Do you ever use alcohol or drugs while you are by yourself, or alone?''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1 and (\protect\hyperlink{child_crafft_alcohol}{child\_CRAFFT\_Alcohol} = 1 or \protect\hyperlink{child_crafft_smoke}{child\_CRAFFT\_Smoke} = 1 or \protect\hyperlink{child_crafft_other_drug}{child\_CRAFFT\_Other\_Drug} = 1)
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_CRAFFT_Alone_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{child_crafft_forget}{%
+\section{child\_CRAFFT\_Forget}\label{child_crafft_forget}}
+
+\textbf{Question}: ``Do you ever forget things you did while using alcohol or drugs?''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1 and (\protect\hyperlink{child_crafft_alcohol}{child\_CRAFFT\_Alcohol} = 1 or \protect\hyperlink{child_crafft_smoke}{child\_CRAFFT\_Smoke} = 1 or \protect\hyperlink{child_crafft_other_drug}{child\_CRAFFT\_Other\_Drug} = 1)
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_CRAFFT_Forget_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{child_crafft_cutdown}{%
+\section{child\_CRAFFT\_CutDown}\label{child_crafft_cutdown}}
+
+\textbf{Question}: ``Do your family or friends ever tell you that you should cut down on your drinking or drug use?''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1 and (\protect\hyperlink{child_crafft_alcohol}{child\_CRAFFT\_Alcohol} = 1 or \protect\hyperlink{child_crafft_smoke}{child\_CRAFFT\_Smoke} = 1 or \protect\hyperlink{child_crafft_other_drug}{child\_CRAFFT\_Other\_Drug} = 1)
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_CRAFFT_CutDown_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{child_crafft_trouble}{%
+\section{child\_CRAFFT\_Trouble}\label{child_crafft_trouble}}
+
+\textbf{Question}: ``Have you ever gotten into trouble while you were using alcohol or drugs?''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1 and (\protect\hyperlink{child_crafft_alcohol}{child\_CRAFFT\_Alcohol} = 1 or \protect\hyperlink{child_crafft_smoke}{child\_CRAFFT\_Smoke} = 1 or \protect\hyperlink{child_crafft_other_drug}{child\_CRAFFT\_Other\_Drug} = 1)
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/child_CRAFFT_Trouble_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{child_height}{%
+\section{child\_height}\label{child_height}}
+
+\textbf{Question}: ``What is this child's height (inches)?''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}:
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}: \emph{This item is a text input}
+
+\hypertarget{child_weight}{%
+\section{child\_weight}\label{child_weight}}
+
+\textbf{Question}: ``What is this child's weight (lbs)?''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}:
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}: \emph{This item is a text input}
+
+\hypertarget{child_id}{%
+\section{child\_ID}\label{child_id}}
+
+\textbf{Question}: ``Participant ID (optional)''
+
+\textbf{Visibility}: \protect\hyperlink{child_parent_consent}{child\_parent\_consent} = 1 and \protect\hyperlink{child_parent_consent2}{child\_parent\_consent2} = 1 and \protect\hyperlink{child_assent}{child\_assent} = 1
+
+\textbf{Item Type}:
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}: \emph{This item is a text input}
+
+\hypertarget{part-protocol-codebook-2}{%
+\part{Protocol Codebook}\label{part-protocol-codebook-2}}
+
+\hypertarget{adult-screener}{%
+\chapter{Adult Screener}\label{adult-screener}}
+
+\hypertarget{adult_consent}{%
+\section{adult\_consent}\label{adult_consent}}
+
+\textbf{Question}:
+
+"Welcome! You are being asked by your physician to fill out this brief questionnaire about your behavior. The questionnaire may take up to 10 minutes of your time to complete. There will be no cost and no payment to you for filling it out.
+
+Your physician may use this information to improve your physical and mental health evaluation. Additionally, this information may be used for general research on children's mental health. The principal investigator for this general research portion plans to have 1500 parents or legal guardian's participate.
+
+Remember, this questionnaire is not a substitute for a diagnostic evaluation by a medical or mental health professional.
+
+Your participation is voluntary; you do not have to take part. Once you have started the questionnaire you can stop at any time.
+
+Note: Your responses are anonymous, and although no personally identifiable information is collected through this questionnaire there is the possible risk of breach of confidentiality.
+
+Please email the Principal investigator with any questions or concerns about the research at: \href{mailto:michael.milham@childmind.org}{\nolinkurl{michael.milham@childmind.org}}
+
+If you have any questions or complaints about your rights as a research subject, contact:
+
+\begin{itemize}
+\item
+  By Mail: Study Subject Adviser, Chesapeake IRB, 6940 Columbia Gateway Drive, Suite 110, Columbia, MD 21046
+\item
+  or call \textbf{toll free}: 877-992-4724
+\item
+  or by \textbf{email}: \href{mailto:adviser@chesapeakeirb.com}{\nolinkurl{adviser@chesapeakeirb.com}}
+\end{itemize}
+
+Please reference the following number when contacting the Study Subject Adviser: Pro00018821.
+
+\textbf{By clicking YES, you agree to the Terms and Conditions }"
+
+\textbf{Visibility}: \emph{Always}
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+YES
+
+0
+
+NO
+
+\hypertarget{adult_consent2}{%
+\section{adult\_consent2}\label{adult_consent2}}
+
+\textbf{Question}:
+
+"I understand that the information provided by this questionnaire is not intended to replace the advice, diagnosis, or treatment offered by a medical or mental health professional, and that my anonymous responses may be used and shared for general research on children's mental health.
+
+CHILD MIND INSTITUTE, INC. AND CHILD MIND MEDICAL PRACTICE, PLLC (TOGETHER, ``CMI'') DOES NOT DIRECTLY OR INDIRECTLY PRACTICE MEDICINE OR DISPENSE MEDICAL ADVICE AS PART OF THIS QUESTIONNAIRE. CMI ASSUMES NO LIABILITY FOR ANY DIAGNOSIS, TREATMENT, DECISION MADE, OR ACTION TAKEN IN RELIANCE UPON INFORMATION PROVIDED BY THIS QUESTIONNAIRE, AND ASSUMES NO RESPONSIBILITY FOR YOUR USE OF THIS QUESTIONNAIRE.
+
+\textbf{Please click YES to continue}."
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+YES
+
+0
+
+NO
+
+\hypertarget{adult_age}{%
+\section{adult\_Age}\label{adult_age}}
+
+\textbf{Question}: ``What is your age?''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}:
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+18
+
+18
+
+19
+
+19
+
+20
+
+20
+
+21
+
+21
+
+22
+
+22
+
+23
+
+23
+
+24
+
+24
+
+25
+
+25
+
+26
+
+26
+
+27
+
+27
+
+28
+
+28
+
+29
+
+29
+
+30
+
+Over 29
+
+\hypertarget{adult_sex}{%
+\section{adult\_Sex}\label{adult_sex}}
+
+\textbf{Question}: ``What is your sex?''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Female
+
+0
+
+Male
+
+\hypertarget{adult_race}{%
+\section{adult\_Race}\label{adult_race}}
+
+\textbf{Question}: ``What is your race?''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+White
+
+2
+
+Black or African America
+
+3
+
+Hispanic or Latino
+
+4
+
+South Asian or Indian American
+
+5
+
+Middle Eastern or Arab American
+
+6
+
+East Asian or Asian American
+
+7
+
+Native American or American Indian
+
+8
+
+Other
+
+9
+
+Two or More Races
+
+10
+
+Don't know
+
+11
+
+Choose not to specify
+
+\hypertarget{adult_ethnicity}{%
+\section{adult\_Ethnicity}\label{adult_ethnicity}}
+
+\textbf{Question}: ``What is your ethnicity?''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Not Hispanic/Latino
+
+2
+
+Hispanic/Latino
+
+3
+
+Don't know
+
+4
+
+Choose not to specify
+
+\hypertarget{adult_instructions1}{%
+\section{adult\_instructions1}\label{adult_instructions1}}
+
+\textbf{Question}: ``Please mark under the heading that best fits you.''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: User Message/instructions
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}: \emph{This item is a markdown message}
+
+\hypertarget{adult_q1score}{%
+\section{adult\_Q1score}\label{adult_q1score}}
+
+\textbf{Question}: ``Fidgety, unable to sit still''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q1score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{adult_q2score}{%
+\section{adult\_Q2score}\label{adult_q2score}}
+
+\textbf{Question}: ``Feel sad, unhappy''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q2score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{adult_q3score}{%
+\section{adult\_Q3score}\label{adult_q3score}}
+
+\textbf{Question}: ``Daydream too much''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q3score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{adult_q4score}{%
+\section{adult\_Q4score}\label{adult_q4score}}
+
+\textbf{Question}: ``Refuse to share''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q4score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{adult_q5score}{%
+\section{adult\_Q5score}\label{adult_q5score}}
+
+\textbf{Question}: ``Do not understand other people's feelings''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q5score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{adult_q6score}{%
+\section{adult\_Q6score}\label{adult_q6score}}
+
+\textbf{Question}: ``Feel hopeless''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q6score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{adult_q7score}{%
+\section{adult\_Q7score}\label{adult_q7score}}
+
+\textbf{Question}: ``Have trouble concentrating''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q7score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{adult_q8score}{%
+\section{adult\_Q8score}\label{adult_q8score}}
+
+\textbf{Question}: ``Fight with other children''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q8score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{adult_q9score}{%
+\section{adult\_Q9score}\label{adult_q9score}}
+
+\textbf{Question}: ``Down on yourself''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q9score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{adult_q10score}{%
+\section{adult\_Q10score}\label{adult_q10score}}
+
+\textbf{Question}: ``Blame others for your troubles''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q10score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{adult_q11score}{%
+\section{adult\_Q11score}\label{adult_q11score}}
+
+\textbf{Question}: ``Seem to be having less fun''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q11score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{adult_q12score}{%
+\section{adult\_Q12score}\label{adult_q12score}}
+
+\textbf{Question}: ``Do not listen to rules''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q12score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{adult_q13score}{%
+\section{adult\_Q13score}\label{adult_q13score}}
+
+\textbf{Question}: ``Act as if driven by a motor''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q13score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{adult_q14score}{%
+\section{adult\_Q14score}\label{adult_q14score}}
+
+\textbf{Question}: ``Tease others''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q14score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{adult_q15score}{%
+\section{adult\_Q15score}\label{adult_q15score}}
+
+\textbf{Question}: ``Worry a lot''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q15score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{adult_q16score}{%
+\section{adult\_Q16score}\label{adult_q16score}}
+
+\textbf{Question}: ``Take things that do not belong to you''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q16score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{adult_q17score}{%
+\section{adult\_Q17score}\label{adult_q17score}}
+
+\textbf{Question}: ``Distract easily''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q17score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Never
+
+1
+
+Sometimes
+
+2
+
+Often
+
+\hypertarget{adult_q18score}{%
+\section{adult\_Q18score}\label{adult_q18score}}
+
+\textbf{Question}: ``Other children or young people pick on me or bully me''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q18score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not True
+
+1
+
+Somewhat True
+
+2
+
+Certainly True
+
+\hypertarget{adult_q19score}{%
+\section{adult\_Q19score}\label{adult_q19score}}
+
+\textbf{Question}: ``Thoughts that you would be better off dead, or of hurting yourself in some way''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q19score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not at all
+
+1
+
+Several Days
+
+2
+
+More than Half the Days
+
+3
+
+Nearly Every Day
+
+\hypertarget{adult_q20score}{%
+\section{adult\_Q20score}\label{adult_q20score}}
+
+\textbf{Question}: ``Little interest or pleasure in doing things''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q20score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not at all
+
+1
+
+Several Days
+
+2
+
+More than Half the Days
+
+3
+
+Nearly Every Day
+
+\hypertarget{adult_q21score}{%
+\section{adult\_Q21score}\label{adult_q21score}}
+
+\textbf{Question}: ``Feeling down, depressed, or hopeless''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q21score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not at all
+
+1
+
+Several Days
+
+2
+
+More than Half the Days
+
+3
+
+Nearly Every Day
+
+\hypertarget{adult_instructions2}{%
+\section{adult\_instructions2}\label{adult_instructions2}}
+
+\textbf{Question}: ``The next questions are about your eating habits and feelings about your shape and weight. Please give your answers on the basis of your behavior over the past 3 months:''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: User Message/instructions
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}: \emph{This item is a markdown message}
+
+\hypertarget{adult_q22score}{%
+\section{adult\_Q22score}\label{adult_q22score}}
+
+\textbf{Question}: ``Were you preoccupied with gaining weight or worrying a lot about becoming fat?''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q22score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not True
+
+1
+
+Somewhat True
+
+2
+
+Certainly True
+
+\hypertarget{adult_q23score}{%
+\section{adult\_Q23score}\label{adult_q23score}}
+
+\textbf{Question}: ``Made yourself throw up to try to control their weight, or because you were upset because you ate too much?''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q23score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not True
+
+1
+
+Somewhat True
+
+2
+
+Certainly True
+
+\hypertarget{adult_q24score}{%
+\section{adult\_Q24score}\label{adult_q24score}}
+
+\textbf{Question}: ``Done other things to control your weight, like exercise excessively, restrict food, take laxatives, or diet pills?''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q24score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not True
+
+1
+
+Somewhat True
+
+2
+
+Certainly True
+
+\hypertarget{adult_q25score}{%
+\section{adult\_Q25score}\label{adult_q25score}}
+
+\textbf{Question}: ``Had eating binges, when you lose control of your eating and eat way more than you needed to because you were unable to stop yourself from eating?''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_Q25score_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+0
+
+Not True
+
+1
+
+Somewhat True
+
+2
+
+Certainly True
+
+\hypertarget{adult_crafft_alcohol}{%
+\section{adult\_CRAFFT\_Alcohol}\label{adult_crafft_alcohol}}
+
+\textbf{Question}:
+
+"During the past 12 months, did you:
+
+Drink any alcohol (more than a few sips)? (Do not count sips of alcohol taken during family or religious events)"
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_CRAFFT_Alcohol_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{adult_crafft_smoke}{%
+\section{adult\_CRAFFT\_Smoke}\label{adult_crafft_smoke}}
+
+\textbf{Question}:
+
+"During the past 12 months, did you:
+
+Smoke any marijuanaor hashish?"
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_CRAFFT_Smoke_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{adult_crafft_other_drug}{%
+\section{adult\_CRAFFT\_Other\_Drug}\label{adult_crafft_other_drug}}
+
+\textbf{Question}:
+
+"During the past 12 months, did you:
+
+Use anything else to get high? (``anything else'' includes illegal drugs, over the counter and perscription drugs, and things that you sniff or ``huff'')"
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_CRAFFT_Other_Drug_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{adult_crafft_car}{%
+\section{adult\_CRAFFT\_Car}\label{adult_crafft_car}}
+
+\textbf{Question}: ``Have you ever ridden in a CAR driven by someone (including yourself) who was''high" or had been using alcohol or drugs?"
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1 and (\protect\hyperlink{adult_crafft_alcohol}{adult\_CRAFFT\_Alcohol} = 1 or \protect\hyperlink{adult_crafft_smoke}{adult\_CRAFFT\_Smoke} = 1 or \protect\hyperlink{adult_crafft_other_drug}{adult\_CRAFFT\_Other\_Drug} = 1)
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_CRAFFT_Car_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{adult_crafft_relax}{%
+\section{adult\_CRAFFT\_Relax}\label{adult_crafft_relax}}
+
+\textbf{Question}: ``Do you ever use alcohol or drugs to relax, feel better about yourself, or fit in?''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1 and (\protect\hyperlink{adult_crafft_alcohol}{adult\_CRAFFT\_Alcohol} = 1 or \protect\hyperlink{adult_crafft_smoke}{adult\_CRAFFT\_Smoke} = 1 or \protect\hyperlink{adult_crafft_other_drug}{adult\_CRAFFT\_Other\_Drug} = 1)
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_CRAFFT_Relax_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{adult_crafft_alone}{%
+\section{adult\_CRAFFT\_Alone}\label{adult_crafft_alone}}
+
+\textbf{Question}: ``Do you ever use alcohol or drugs while you are by yourself, or alone?''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1 and (\protect\hyperlink{adult_crafft_alcohol}{adult\_CRAFFT\_Alcohol} = 1 or \protect\hyperlink{adult_crafft_smoke}{adult\_CRAFFT\_Smoke} = 1 or \protect\hyperlink{adult_crafft_other_drug}{adult\_CRAFFT\_Other\_Drug} = 1)
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_CRAFFT_Alone_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{adult_crafft_forget}{%
+\section{adult\_CRAFFT\_Forget}\label{adult_crafft_forget}}
+
+\textbf{Question}: ``Do you ever forget things you did while using alcohol or drugs?''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1 and (\protect\hyperlink{adult_crafft_alcohol}{adult\_CRAFFT\_Alcohol} = 1 or \protect\hyperlink{adult_crafft_smoke}{adult\_CRAFFT\_Smoke} = 1 or \protect\hyperlink{adult_crafft_other_drug}{adult\_CRAFFT\_Other\_Drug} = 1)
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_CRAFFT_Forget_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{adult_crafft_cutdown}{%
+\section{adult\_CRAFFT\_CutDown}\label{adult_crafft_cutdown}}
+
+\textbf{Question}: ``Do your family or friends ever tell you that you should cut down on your drinking or drug use?''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1 and (\protect\hyperlink{adult_crafft_alcohol}{adult\_CRAFFT\_Alcohol} = 1 or \protect\hyperlink{adult_crafft_smoke}{adult\_CRAFFT\_Smoke} = 1 or \protect\hyperlink{adult_crafft_other_drug}{adult\_CRAFFT\_Other\_Drug} = 1)
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_CRAFFT_CutDown_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{adult_crafft_trouble}{%
+\section{adult\_CRAFFT\_Trouble}\label{adult_crafft_trouble}}
+
+\textbf{Question}: ``Have you ever gotten into trouble while you were using alcohol or drugs?''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1 and (\protect\hyperlink{adult_crafft_alcohol}{adult\_CRAFFT\_Alcohol} = 1 or \protect\hyperlink{adult_crafft_smoke}{adult\_CRAFFT\_Smoke} = 1 or \protect\hyperlink{adult_crafft_other_drug}{adult\_CRAFFT\_Other\_Drug} = 1)
+
+\textbf{Item Type}: Single-select radio button
+
+\textbf{Header Image}:
+
+\begin{flushleft}\includegraphics[width=0.33\linewidth]{downloadFigs4latex_HBN_PMHS_Codebook/adult_CRAFFT_Trouble_headerImg} \end{flushleft}
+
+\textbf{Responses}:
+
+Value
+
+Label
+
+1
+
+Yes
+
+0
+
+No
+
+\hypertarget{adult_height}{%
+\section{adult\_height}\label{adult_height}}
+
+\textbf{Question}: ``What is this child's height (inches)?''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}:
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}: \emph{This item is a text input}
+
+\hypertarget{adult_weight}{%
+\section{adult\_weight}\label{adult_weight}}
+
+\textbf{Question}: ``What is this child's weight (lbs)?''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}:
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}: \emph{This item is a text input}
+
+\hypertarget{adult_id}{%
+\section{adult\_ID}\label{adult_id}}
+
+\textbf{Question}: ``Participant ID (optional)''
+
+\textbf{Visibility}: \protect\hyperlink{adult_consent}{adult\_consent} = 1 and \protect\hyperlink{adult_consent2}{adult\_consent2} = 1
+
+\textbf{Item Type}:
+
+\textbf{Header Image}: \emph{None}
+
+\textbf{Responses}: \emph{This item is a text input}
+
+\bibliography{book.bib,packages.bib}
+
+\end{document}

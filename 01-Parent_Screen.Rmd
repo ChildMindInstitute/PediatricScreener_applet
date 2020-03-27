@@ -1,0 +1,17 @@
+# (PART) Protocol Codebook {-}
+
+# Parent Screener 
+
+```{r, include=FALSE}
+
+#get names of all questions from this section and generate codebook item objects for each
+
+sectionQuestions <- unique(filter(dataDic, `Form Name` == 'parent_report')$`Variable / Field Name`)
+
+sectionContent <- lapply(sectionQuestions, function(itemName) knit_expand(file = 'templates/itemTemplate.Rmd'))
+
+```
+
+
+`r knit(text = unlist(sectionContent))`
+
